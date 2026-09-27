@@ -1,0 +1,23 @@
+{
+  "viewports": [
+    {
+      "width": 1440,
+      "violations": 0
+    },
+    {
+      "width": 820,
+      "violations": 0
+    },
+    {
+      "width": 390,
+      "violations": 0
+    },
+    {
+      "width": 320,
+      "violations": 0
+    }
+  ],
+  "errors": [],
+  "textEnlargement": "200% root font at 320px; not native browser zoom",
+  "screenReader": "not performed"
+}

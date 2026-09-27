@@ -1,0 +1,38 @@
+[
+  {
+    "selector": "body",
+    "foreground": "rgb(37, 43, 37)",
+    "background": "rgb(245, 242, 235)",
+    "ratio": 12.945493560044978
+  },
+  {
+    "selector": ".room-note",
+    "foreground": "rgb(37, 43, 37)",
+    "background": "rgb(245, 242, 235)",
+    "ratio": 12.945493560044978
+  },
+  {
+    "selector": ".primary",
+    "foreground": "rgb(92, 101, 91)",
+    "background": "rgb(231, 235, 223)",
+    "ratio": 5.002496479075612
+  },
+  {
+    "selector": ".create-panel",
+    "foreground": "rgb(37, 43, 37)",
+    "background": "rgb(255, 253, 248)",
+    "ratio": 14.237490529915581
+  },
+  {
+    "selector": ".lot-card",
+    "foreground": "rgb(37, 43, 37)",
+    "background": "rgb(255, 253, 248)",
+    "ratio": 14.237490529915581
+  },
+  {
+    "selector": ".muted",
+    "foreground": "rgb(92, 101, 91)",
+    "background": "rgb(255, 253, 248)",
+    "ratio": 5.957310673845991
+  }
+]

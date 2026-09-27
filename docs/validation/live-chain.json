@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-09-27T06:42:15.585Z",
+  "mode": "read-only; no wallet or broadcast",
+  "sourceCommit": "41757ee30dd8c97e78e731278654f1aff4e372cb",
+  "attempts": [
+    {
+      "rpc": "https://ethereum-sepolia-rpc.publicnode.com",
+      "chainId": 11155111,
+      "blockNumber": 11791607,
+      "contracts": [
+        {
+          "name": "LaunchToken",
+          "address": "0xc3006d2080537c453a661d6760d54233c8917c85",
+          "runtimeBytes": 1709
+        },
+        {
+          "name": "LotAuction",
+          "address": "0x3c4aae743d5917498686e10a1abc1ceb131d8563",
+          "runtimeBytes": 5326
+        }
+      ],
+      "token": "0xC3006d2080537C453a661d6760d54233c8917c85",
+      "lotCount": "0",
+      "result": "pass"
+    }
+  ],
+  "result": "pass"
+}

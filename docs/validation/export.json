@@ -1,0 +1,24 @@
+{
+  "result": "pass",
+  "assetCount": 6,
+  "exportBytes": 517648,
+  "sourceCommit": "41757ee30dd8c97e78e731278654f1aff4e372cb",
+  "abiBindings": [
+    {
+      "name": "LaunchToken",
+      "abiHash": "38880b8e56d42ce900f744a7908c7139632a49f1c3f33385c64ceaed29d37bee"
+    },
+    {
+      "name": "LotAuction",
+      "abiHash": "d4966fd6df8751cd1c545d2d0a6a69dacd0c2f2a4cadb29fa1e7715908e0e14a"
+    }
+  ],
+  "checks": [
+    "exact handoff contract set and identifiers",
+    "unchanged network and walletAddChain",
+    "all and only exported files inventoried, excluding manifest",
+    "every SHA-256 and canonical ABI Keccak verified",
+    "relative safe paths",
+    "asset-count and size limits"
+  ]
+}

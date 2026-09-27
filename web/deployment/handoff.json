@@ -1,0 +1,51 @@
+{
+  "chainId": 11155111,
+  "repoUrl": "https://github.com/identity-md-launches/launch-238-lotauction",
+  "version": 1,
+  "launchId": "8595d95c-9033-4d7d-b141-a7d3423a5d24",
+  "manifest": {
+    "kind": "evm_project",
+    "pool": {
+      "fee": 3000,
+      "tickSpacing": 60,
+      "initialPrice": "79228162514264337593543950336",
+      "pairedCurrency": "0x0000000000000000000000000000000000000000"
+    },
+    "notes": "Gavel (GAVL) and LotAuction are intended for Sepolia. Deploy LaunchToken first, then LotAuction with the launch token as its immutable bidding currency. Both constructors are nonpayable; no initialization calls or application funding at deployment are required. LotAuction has no owner or administrative role and uses pull-based GAVL withdrawals and ERC-20 lot claims. The pool pairs GAVL with native Sepolia ETH and has no hook. initialPrice is decimal sqrtPriceX96; the deployer derives the effective opening price from the pinned policy when it specifies initialMarketCapWei. Policy, signed artifact linkage, admission and deployment are service responsibilities.",
+    "token": {
+      "name": "Gavel",
+      "symbol": "GAVL",
+      "contract": "LaunchToken",
+      "decimals": 18
+    },
+    "contracts": [
+      {
+        "contract": "LotAuction",
+        "constructorArgs": [
+          "$token"
+        ]
+      }
+    ]
+  },
+  "contracts": [
+    {
+      "name": "LaunchToken",
+      "txHash": "0x1d9a78b0d185453b1f1065314f30290434a54803e2eb351faf5c0be535b495f6",
+      "abiHash": "38880b8e56d42ce900f744a7908c7139632a49f1c3f33385c64ceaed29d37bee",
+      "address": "0xc3006d2080537c453a661d6760d54233c8917c85",
+      "blockNumber": 11791294,
+      "creationCodeHash": "d240e7c423a86998e7b96c7d9458dbb159b38ebece0af115b35a09d2157a178f"
+    },
+    {
+      "name": "LotAuction",
+      "txHash": "0x1d9a78b0d185453b1f1065314f30290434a54803e2eb351faf5c0be535b495f6",
+      "abiHash": "d4966fd6df8751cd1c545d2d0a6a69dacd0c2f2a4cadb29fa1e7715908e0e14a",
+      "address": "0x3c4aae743d5917498686e10a1abc1ceb131d8563",
+      "blockNumber": 11791294,
+      "creationCodeHash": "b1365dd9245b232715178c2bf64f6f3e447d15d7064154fb756ae91269fd4e11"
+    }
+  ],
+  "sourceCommit": "41757ee30dd8c97e78e731278654f1aff4e372cb",
+  "abiInstructions": "Build ABIs from this exact source commit; compare canonicalKeccak(abi) with abiHash. Verify deployed code on the stated chain before enabling transactions.",
+  "attestationHash": "0627dd49ecf5ff5f54bb05c8721d6850f93240eacb9d720c43d32857a143523e"
+}
