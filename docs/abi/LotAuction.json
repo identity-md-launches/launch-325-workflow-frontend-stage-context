@@ -1,0 +1,650 @@
+[
+  {
+    "type": "constructor",
+    "inputs": [
+      {
+        "name": "gavl",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "EXTENSION",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "MAX_DURATION",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "MIN_DURATION",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "MIN_RESERVE",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "bid",
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "amount",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "cancel",
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "claimLot",
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "createLot",
+    "inputs": [
+      {
+        "name": "lotToken",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "lotAmount",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "reserve",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "duration",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "id",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "lot",
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "tuple",
+        "internalType": "struct LotAuction.Lot",
+        "components": [
+          {
+            "name": "seller",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "lotToken",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "lotAmount",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "reserve",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "end",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "highestBidder",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "highestBid",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "claimant",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "status",
+            "type": "uint8",
+            "internalType": "enum LotAuction.Status"
+          },
+          {
+            "name": "claimed",
+            "type": "bool",
+            "internalType": "bool"
+          }
+        ]
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "lotCount",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "minNextBid",
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "settle",
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "token",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "contract IERC20"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "totalBidEscrow",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "totalTokenLotEscrow",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "totalWithdrawable",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "withdraw",
+    "inputs": [],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "withdrawable",
+    "inputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "event",
+    "name": "Bid",
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256",
+        "indexed": true,
+        "internalType": "uint256"
+      },
+      {
+        "name": "bidder",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "amount",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      },
+      {
+        "name": "end",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "LotCancelled",
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256",
+        "indexed": true,
+        "internalType": "uint256"
+      },
+      {
+        "name": "seller",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "LotClaimed",
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256",
+        "indexed": true,
+        "internalType": "uint256"
+      },
+      {
+        "name": "claimant",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "lotToken",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "amount",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "LotCreated",
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256",
+        "indexed": true,
+        "internalType": "uint256"
+      },
+      {
+        "name": "seller",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "lotToken",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "lotAmount",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      },
+      {
+        "name": "reserve",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      },
+      {
+        "name": "end",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "Settled",
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256",
+        "indexed": true,
+        "internalType": "uint256"
+      },
+      {
+        "name": "claimant",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "seller",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "amount",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "Withdrawn",
+    "inputs": [
+      {
+        "name": "account",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "amount",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "error",
+    "name": "AddressEmptyCode",
+    "inputs": [
+      {
+        "name": "target",
+        "type": "address",
+        "internalType": "address"
+      }
+    ]
+  },
+  {
+    "type": "error",
+    "name": "AddressInsufficientBalance",
+    "inputs": [
+      {
+        "name": "account",
+        "type": "address",
+        "internalType": "address"
+      }
+    ]
+  },
+  {
+    "type": "error",
+    "name": "AlreadyClaimed",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "AlreadyHighestBidder",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "AuctionEnded",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "AuctionNotEnded",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "BidTooLow",
+    "inputs": [
+      {
+        "name": "minimum",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ]
+  },
+  {
+    "type": "error",
+    "name": "FailedInnerCall",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "HasBid",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "InexactBidReceipt",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "InvalidAmount",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "InvalidDuration",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "InvalidReserve",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "InvalidToken",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "LotClosed",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "NoTokensReceived",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "NotClaimant",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "NotSeller",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "NothingToWithdraw",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "ReentrancyGuardReentrantCall",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "SafeERC20FailedOperation",
+    "inputs": [
+      {
+        "name": "token",
+        "type": "address",
+        "internalType": "address"
+      }
+    ]
+  },
+  {
+    "type": "error",
+    "name": "SellerCannotBid",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "UnknownLot",
+    "inputs": []
+  }
+]
